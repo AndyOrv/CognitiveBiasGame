@@ -46,6 +46,7 @@ namespace GAMEZONE
 
             controller.Move(velocity * Time.deltaTime);
         }
+        
     }
 }
 

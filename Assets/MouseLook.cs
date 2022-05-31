@@ -28,6 +28,8 @@ namespace GAMEZONE
             mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
             playerBody.Rotate(Vector3.up * mouseX);
+
+            //playerBody.Rotate(Vector3.right * mouseY);
         }
     }
 }
