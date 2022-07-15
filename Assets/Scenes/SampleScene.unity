@@ -1010,8 +1010,8 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 128
-  jumpHeight: 1000
-  gravity: -1.22625
+  jumpHeight: 2200
+  gravity: -0.07664063
 --- !u!1 &1134739480
 GameObject:
   m_ObjectHideFlags: 0
