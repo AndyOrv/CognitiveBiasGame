@@ -4,42 +4,47 @@ using UnityEngine;
 
 public class DoorTrigger : MonoBehaviour
 {
+    // the door from this object
+    public GameObject Door;
+    // the door copied and rotated/moved to be the opened door
+    public GameObject DoorOpen;
+    // this will be a copy of the original door so that we have some numbers to work with.
+    private GameObject DoorClosed;
+    // this controls if the door is opened or closed.
+    public bool isOpened = false;
 
-    [SerializeField]
-    private GameObject door;
-    public int upheight;
-    private Vector3 startPoint;
+    // this is the movement rate (if movemnt is applied to the door)
+    public float moveSpeed = 3;
+    // this is the rotation rate (if rotation is applied to the door)
+    public float rotationSpeed = 90;
 
-    bool isOpened = false;
-
-    private void Start()
+    void Start()
     {
-        startPoint = door.transform.position;
+        // copy the door to keep its position
+        DoorClosed = Instantiate(Door, Door.transform.position, Door.transform.rotation);
+        // hide both the open and closed door
+        DoorClosed.SetActive(false);
+        DoorOpen.SetActive(false);
     }
 
-    /*
-    void OnTriggerEnter(Collider other)
+    void Update()
     {
-        if(!isOpened)
-        {
-            isOpened = true;
-            door.transform.position = new Vector3(0,upheight,0);
-        }
-
-    }
-    */
-    private void OnTriggerStay(Collider other)
-    {
-        Debug.Log("door opened");
-
-        if (other.attachedRigidbody)
-        {
-            door.transform.position = new Vector3(0, upheight, 0);
-        }
+        // every frame, move the door towards the Open/Closed door
+        var target = isOpened ? DoorOpen : DoorClosed;
+        // these actually do the moving/rotating
+        Door.transform.position = Vector3.MoveTowards(Door.transform.position, target.transform.position, moveSpeed * Time.deltaTime);
+        Door.transform.rotation = Quaternion.RotateTowards(Door.transform.rotation, target.transform.rotation, rotationSpeed * Time.deltaTime);
     }
 
-    //private void Update()
-    //{
-    //   door.transform.position = startPoint;
-    //}
+    void OnTriggerEnter(Collider cube)
+    {
+        // whenever anything enters the trigger, open the door
+        isOpened = true;
+    }
+
+    void OnTriggerExit(Collider cube)
+    {
+        // whenever anything exits the trigger, close the door.
+        isOpened = false;
+    }
 }
