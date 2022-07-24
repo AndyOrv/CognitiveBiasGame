@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DoorTrigger : MonoBehaviour
 {
+    public bool willClose = true;
     // the door from this object
     public GameObject Door;
     // the door copied and rotated/moved to be the opened door
@@ -45,6 +46,9 @@ public class DoorTrigger : MonoBehaviour
     void OnTriggerExit(Collider cube)
     {
         // whenever anything exits the trigger, close the door.
-        isOpened = false;
+        if (willClose)
+        {
+            isOpened = false;
+        }
     }
 }
