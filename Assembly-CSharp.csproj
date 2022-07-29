@@ -58,10 +58,10 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Dropper.cs" />
     <Compile Include="Assets\Scripts\MouseLook.cs" />
+    <Compile Include="Assets\Scripts\ChangeMaterial.cs" />
     <Compile Include="Assets\Scripts\PickUp.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\DoorTrigger.cs" />
-    <Compile Include="Assets\Scripts\ChangeMaterial.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
