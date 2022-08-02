@@ -62,6 +62,8 @@
     <Compile Include="Assets\Scripts\PickUp.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\DoorTrigger.cs" />
+    <Compile Include="Assets\Scripts\CubeShifter.cs" />
+    <Compile Include="Assets\Scripts\FailTrig.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
