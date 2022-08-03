@@ -354,6 +354,7 @@
 "Assets/Scripts/DoorTrigger.cs"
 "Assets/Scripts/Dropper.cs"
 "Assets/Scripts/FailTrig.cs"
+"Assets/Scripts/GoodDropper.cs"
 "Assets/Scripts/MouseLook.cs"
 "Assets/Scripts/PickUp.cs"
 "Assets/Scripts/PlayerMovement.cs"

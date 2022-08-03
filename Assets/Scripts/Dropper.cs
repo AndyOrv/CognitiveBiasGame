@@ -7,11 +7,10 @@ public class Dropper : MonoBehaviour
     public int totalTally;
     public int count = 0;
 
-    public GameObject doorTrig;
-
     public Material changeColour;
     public GameObject[] marks;
 
+    /*
     private void Start()
     {
         doorTrig.SetActive(false);
@@ -25,6 +24,7 @@ public class Dropper : MonoBehaviour
             doorTrig.SetActive(true);
         }
     }
+    */
 
     private void OnTriggerEnter(Collider other)
     {
