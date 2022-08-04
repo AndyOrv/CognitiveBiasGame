@@ -4,19 +4,28 @@ using UnityEngine;
 
 public class GoodDropper : Dropper
 {
-    public GameObject doorTrig;
+    public int BadTally;
+    public int GoodTally;
+
+    public GameObject badDoorTrig;
+    public GameObject goodDoorTrig;
 
     private void Start()
     {
-        doorTrig.SetActive(false);
+        badDoorTrig.SetActive(false);
+        goodDoorTrig.SetActive(false);
     }
 
     // Start is called before the first frame update
     private void Update()
     {
-        if (count >= totalTally)
+        if (count >= BadTally)
         {
-            doorTrig.SetActive(true);
+            badDoorTrig.SetActive(true);
+        }
+        if (count >= GoodTally)
+        {
+            goodDoorTrig.SetActive(true);
         }
     }
 }

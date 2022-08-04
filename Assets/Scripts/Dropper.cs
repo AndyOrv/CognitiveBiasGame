@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Dropper : MonoBehaviour
 {
-    public int totalTally;
     public int count = 0;
 
     public Material changeColour;
