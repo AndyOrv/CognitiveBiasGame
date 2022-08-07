@@ -1,0 +1,14 @@
+This is Wall Texture Sets ver 1.0 from BK.
+Thanks for Downloading.
+Find more Assets on https://www.youtube.com/channel/UCOxcYrL1K398qsx3L4Qrz_Q
+
+Instructions:
+
+Create a 3d object (plane, cube, etc.), Scale it as you want, and drag and drop material on it.
+You can use these textures as you like.
+There are 3 textures on each material, AlbedoTransparency, MetallicSmoothness and Normal.
+You can scale material with tiling option to scale texture as you want for performance optimization.
+Adjust smoothness if you want.
+
+
+E-mail: bhagu220@gmail.com
