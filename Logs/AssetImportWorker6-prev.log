@@ -15,7 +15,7 @@ C:/Users/Andrew/Documents/GitHub/CognitiveBiasGame
 -logFile
 Logs/AssetImportWorker6.log
 -srvPort
-56597
+60674
 Successfully changed project path to: C:/Users/Andrew/Documents/GitHub/CognitiveBiasGame
 C:/Users/Andrew/Documents/GitHub/CognitiveBiasGame
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/Andrew/Documents/GitHub/CognitiveBiasGame
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 111.86 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 126.70 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.1f1 (3b70a0754835)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.1f1/Editor/Data/Resources/UnitySubsystems
@@ -63,76 +63,76 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.1f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56220
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56384
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003962 seconds.
+Registered in 0.004061 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 99.38 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 100.33 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.612 seconds
+- Completed reload, in  0.661 seconds
 Domain Reload Profiling:
-	ReloadAssembly (612ms)
-		BeginReloadAssembly (59ms)
+	ReloadAssembly (661ms)
+		BeginReloadAssembly (74ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (458ms)
-			LoadAssemblies (57ms)
+		EndReloadAssembly (476ms)
+			LoadAssemblies (71ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (89ms)
+			SetupTypeCache (102ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (26ms)
-			SetupLoadedEditorAssemblies (299ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (295ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (100ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (150ms)
-				ProcessInitializeOnLoadMethodAttributes (40ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (138ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003730 seconds.
+Registered in 0.003884 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Andrew\Documents\GitHub\CognitiveBiasGame\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Symbol file LoadedFromMemory doesn't match image C:\Users\Andrew\Documents\GitHub\CognitiveBiasGame\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.89 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.94 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.938 seconds
+- Completed reload, in  1.156 seconds
 Domain Reload Profiling:
-	ReloadAssembly (939ms)
-		BeginReloadAssembly (94ms)
+	ReloadAssembly (1157ms)
+		BeginReloadAssembly (141ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (19ms)
-		EndReloadAssembly (743ms)
-			LoadAssemblies (73ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (867ms)
+			LoadAssemblies (135ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (236ms)
+			SetupTypeCache (284ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (52ms)
-			SetupLoadedEditorAssemblies (338ms)
+			RebuildScriptCaches (64ms)
+			SetupLoadedEditorAssemblies (368ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (82ms)
-				ProcessInitializeOnLoadAttributes (220ms)
-				ProcessInitializeOnLoadMethodAttributes (23ms)
+				BeforeProcessingInitializeOnLoad (87ms)
+				ProcessInitializeOnLoadAttributes (247ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
 				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -140,13 +140,127 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.90 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3789 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 26 unused Assets / (0.5 MB). Loaded Objects now: 4281.
-Memory consumption went from 163.9 MB to 163.4 MB.
-Total: 3.442600 ms (FindLiveObjects: 0.393500 ms CreateObjectMapping: 0.103900 ms MarkObjects: 2.569700 ms  DeleteObjects: 0.373700 ms)
+Unloading 26 unused Assets / (0.5 MB). Loaded Objects now: 4286.
+Memory consumption went from 164.7 MB to 164.2 MB.
+Total: 3.496600 ms (FindLiveObjects: 0.398200 ms CreateObjectMapping: 0.189200 ms MarkObjects: 2.585400 ms  DeleteObjects: 0.321700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004379 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Andrew\Documents\GitHub\CognitiveBiasGame\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image C:\Users\Andrew\Documents\GitHub\CognitiveBiasGame\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.227 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1228ms)
+		BeginReloadAssembly (157ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (48ms)
+		EndReloadAssembly (965ms)
+			LoadAssemblies (107ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (289ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (466ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (86ms)
+				ProcessInitializeOnLoadAttributes (314ms)
+				ProcessInitializeOnLoadMethodAttributes (39ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3733 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (472.7 KB). Loaded Objects now: 4289.
+Memory consumption went from 159.5 MB to 159.0 MB.
+Total: 6.228500 ms (FindLiveObjects: 0.610200 ms CreateObjectMapping: 0.108100 ms MarkObjects: 5.096800 ms  DeleteObjects: 0.410500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004503 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Andrew\Documents\GitHub\CognitiveBiasGame\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image C:\Users\Andrew\Documents\GitHub\CognitiveBiasGame\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.039 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1040ms)
+		BeginReloadAssembly (132ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (823ms)
+			LoadAssemblies (81ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (223ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (428ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (76ms)
+				ProcessInitializeOnLoadAttributes (299ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.93 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3733 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (488.4 KB). Loaded Objects now: 4292.
+Memory consumption went from 159.5 MB to 159.1 MB.
+Total: 5.765200 ms (FindLiveObjects: 0.613600 ms CreateObjectMapping: 0.208400 ms MarkObjects: 4.086700 ms  DeleteObjects: 0.854500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -160,145 +274,314 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 2659158.917827 seconds.
-  path: Assets/Standard Assets/Characters/ThirdPersonCharacter/Textures/EthanNormals.png
-  artifactKey: Guid(3b5b7be0f2332c24f89a2af018daa62d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Standard Assets/Characters/ThirdPersonCharacter/Textures/EthanNormals.png using Guid(3b5b7be0f2332c24f89a2af018daa62d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d2e3d2f87f13d9c22801118b8fab111') in 0.184859 seconds 
+  Time since last request: 2741574.838085 seconds.
+  path: Assets/Scenes/TitleScene.unity
+  artifactKey: Guid(5cee28ee2958b69418173122a30fb0c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/TitleScene.unity using Guid(5cee28ee2958b69418173122a30fb0c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e5eb62b59f077f37720cca7b9cc3897') in 0.011411 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003328 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Andrew\Documents\GitHub\CognitiveBiasGame\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image C:\Users\Andrew\Documents\GitHub\CognitiveBiasGame\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.91 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.032 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1033ms)
+		BeginReloadAssembly (126ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (823ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (243ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (399ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (282ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.41 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3733 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (512.0 KB). Loaded Objects now: 4295.
+Memory consumption went from 159.6 MB to 159.1 MB.
+Total: 4.955800 ms (FindLiveObjects: 0.741900 ms CreateObjectMapping: 0.359200 ms MarkObjects: 3.070300 ms  DeleteObjects: 0.781200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003381 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Andrew\Documents\GitHub\CognitiveBiasGame\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image C:\Users\Andrew\Documents\GitHub\CognitiveBiasGame\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.30 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.038 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1039ms)
+		BeginReloadAssembly (130ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (821ms)
+			LoadAssemblies (88ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (238ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (403ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (63ms)
+				ProcessInitializeOnLoadAttributes (286ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3733 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (480.8 KB). Loaded Objects now: 4298.
+Memory consumption went from 159.5 MB to 159.1 MB.
+Total: 7.972400 ms (FindLiveObjects: 1.014800 ms CreateObjectMapping: 0.253900 ms MarkObjects: 5.984100 ms  DeleteObjects: 0.716800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003669 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Andrew\Documents\GitHub\CognitiveBiasGame\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image C:\Users\Andrew\Documents\GitHub\CognitiveBiasGame\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.041 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1042ms)
+		BeginReloadAssembly (128ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (823ms)
+			LoadAssemblies (85ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (232ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (415ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (79ms)
+				ProcessInitializeOnLoadAttributes (283ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.15 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3733 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (0.5 MB). Loaded Objects now: 4301.
+Memory consumption went from 159.6 MB to 159.1 MB.
+Total: 5.694100 ms (FindLiveObjects: 0.796200 ms CreateObjectMapping: 0.150300 ms MarkObjects: 4.315400 ms  DeleteObjects: 0.430300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 21.852267 seconds.
-  path: Assets/SampleScenes/Textures/SwatchNavyDarkAlbedo.png
-  artifactKey: Guid(b64756a3fbf7f7e42b02aa3aa8669374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SampleScenes/Textures/SwatchNavyDarkAlbedo.png using Guid(b64756a3fbf7f7e42b02aa3aa8669374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e35f559076ee77dc6fee00c54b03b0b5') in 0.038156 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/SampleScenes/Textures/SwatchTealAlbedo.png
-  artifactKey: Guid(55aa8af457d5bdb419c375b143edb6a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SampleScenes/Textures/SwatchTealAlbedo.png using Guid(55aa8af457d5bdb419c375b143edb6a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2d7eb8ff5d1a53d5a27b3b495d49bac') in 0.015571 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Textures/Text Overflow - Linked Text Image 1.png
-  artifactKey: Guid(4ccf43d26c4748c792174516f4a8fcef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Text Overflow - Linked Text Image 1.png using Guid(4ccf43d26c4748c792174516f4a8fcef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e37d32a9a8fd67b791b78ce5d915bdd8') in 0.029310 seconds 
+  Time since last request: 90.812470 seconds.
+  path: Assets/ColorSkies/Textures/Skybox_8/Front_Tex.png
+  artifactKey: Guid(3f9dd857e107eea4dbc8fab7ebd80a13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ColorSkies/Textures/Skybox_8/Front_Tex.png using Guid(3f9dd857e107eea4dbc8fab7ebd80a13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34053c5d6bae14de96980a473ae304fe') in 0.102686 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000031 seconds.
-  path: Assets/Standard Assets/Environment/SpeedTree/Conifer/Thumb_Conifer_Desktop.jpg
-  artifactKey: Guid(1fbc4e410d66d804aaf31b4c25b16ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Standard Assets/Environment/SpeedTree/Conifer/Thumb_Conifer_Desktop.jpg using Guid(1fbc4e410d66d804aaf31b4c25b16ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27701954f49f84af9513611f61579c9a') in 0.022263 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Standard Assets/Effects/ToonShading/Textures/ToonLit.psd
-  artifactKey: Guid(b995d4bd9d11078d11005b9844295342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Standard Assets/Effects/ToonShading/Textures/ToonLit.psd using Guid(b995d4bd9d11078d11005b9844295342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '909b0fc71ad20d23bd509d0a0926e97e') in 0.062144 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/Imports/RPG_FPS_game_assets_industrial/Textures/Concrete_wall/UNIConcrete_walls/UNIConcrete_wall_v2/UNIConcrete_wall_v2.tga
-  artifactKey: Guid(58332b65d17323b48b97df0241fe22e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Imports/RPG_FPS_game_assets_industrial/Textures/Concrete_wall/UNIConcrete_walls/UNIConcrete_wall_v2/UNIConcrete_wall_v2.tga using Guid(58332b65d17323b48b97df0241fe22e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85c5011c0df26cd678c51f81cad52a67') in 0.040625 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.269332 seconds.
-  path: Assets/Standard Assets/Effects/ToonShading/Textures/UtilToonGradient.png
-  artifactKey: Guid(4a056241e2722dc46a7262a8e7073fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Standard Assets/Effects/ToonShading/Textures/UtilToonGradient.png using Guid(4a056241e2722dc46a7262a8e7073fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d990ba7375536172771e1a4c957675c') in 0.018958 seconds 
+  path: Assets/ColorSkies/Textures/Skybox_8/Left_Tex.png
+  artifactKey: Guid(e80644f2945153b4cbec6ea25b00bd87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ColorSkies/Textures/Skybox_8/Left_Tex.png using Guid(e80644f2945153b4cbec6ea25b00bd87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '865879642fdd228e65c58cc9c3ebce29') in 0.017312 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000058 seconds.
-  path: Assets/MyAssets/wallTextureSet/wallTextureSet01/01/walltextureset02_01_Normal.png
-  artifactKey: Guid(bcdf9b97a435af9488904b37fbc751f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/wallTextureSet/wallTextureSet01/01/walltextureset02_01_Normal.png using Guid(bcdf9b97a435af9488904b37fbc751f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bea6e4aa044b361b1ba66243cf8417b') in 0.023124 seconds 
+  path: Assets/ColorSkies/Textures/Skybox_8/Down_Tex.png
+  artifactKey: Guid(b20a4e86d9bc1014081950eee3a2f5d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ColorSkies/Textures/Skybox_8/Down_Tex.png using Guid(b20a4e86d9bc1014081950eee3a2f5d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62b6d07bbb356db51440863ffc08e4ab') in 0.018881 seconds 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/MyAssets/wallTextureSet/wallTextureSet01/01/walltextureset02_01_MetallicSmoothness.png
-  artifactKey: Guid(852cb4f76cbe2984baf806235fb86759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/wallTextureSet/wallTextureSet01/01/walltextureset02_01_MetallicSmoothness.png using Guid(852cb4f76cbe2984baf806235fb86759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14c16e4fac8f6e69711d9b3debf6a74d') in 0.023631 seconds 
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004070 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Andrew\Documents\GitHub\CognitiveBiasGame\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image C:\Users\Andrew\Documents\GitHub\CognitiveBiasGame\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.91 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.058 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1059ms)
+		BeginReloadAssembly (131ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (831ms)
+			LoadAssemblies (76ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (245ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (394ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (63ms)
+				ProcessInitializeOnLoadAttributes (273ms)
+				ProcessInitializeOnLoadMethodAttributes (37ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3733 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (496.7 KB). Loaded Objects now: 4306.
+Memory consumption went from 159.6 MB to 159.1 MB.
+Total: 7.375100 ms (FindLiveObjects: 0.984900 ms CreateObjectMapping: 0.734700 ms MarkObjects: 4.847400 ms  DeleteObjects: 0.805800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.007796 seconds.
-  path: Assets/MyAssets/wallTextureSet/wallTextureSet01/03/walltextureset02_03_MetallicSmoothness.png
-  artifactKey: Guid(f1aabd36f81aa0144b3f5ebd17b6d88d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/wallTextureSet/wallTextureSet01/03/walltextureset02_03_MetallicSmoothness.png using Guid(f1aabd36f81aa0144b3f5ebd17b6d88d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e266df73aebf49c84d1b49ca0fae49b') in 0.020436 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/MyAssets/wallTextureSet/wallTextureSet03/01/walltextureset03_01_AlbedoTransparency.png
-  artifactKey: Guid(12d74b198e425f8448a951b926def979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/wallTextureSet/wallTextureSet03/01/walltextureset03_01_AlbedoTransparency.png using Guid(12d74b198e425f8448a951b926def979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae2f5ff6ce6dca6f4ac15221d17265fe') in 0.019466 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/MyAssets/wallTextureSet/wallTextureSet03/02/walltextureset03_01_AlbedoTransparency.png
-  artifactKey: Guid(348ce20f51037d94fb36277804be0dbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/wallTextureSet/wallTextureSet03/02/walltextureset03_01_AlbedoTransparency.png using Guid(348ce20f51037d94fb36277804be0dbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65dd5519c2eb5f0a4d8b64ec626f0d23') in 0.021306 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.220261 seconds.
-  path: Assets/MyAssets/wallTextureSet/wallTextureSet02/01/walltextureset03_01_AlbedoTransparency.png
-  artifactKey: Guid(456586b413f9cb247b84cf9ee3c08a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/wallTextureSet/wallTextureSet02/01/walltextureset03_01_AlbedoTransparency.png using Guid(456586b413f9cb247b84cf9ee3c08a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e11bd2927433d44d08c7228d2029c39') in 0.026974 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/MyAssets/wallTextureSet/wallTextureSet02/solo/walltextureset03_01_MetallicSmoothness.png
-  artifactKey: Guid(4f35cb435cb8aa7419d64a03de2af504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/wallTextureSet/wallTextureSet02/solo/walltextureset03_01_MetallicSmoothness.png using Guid(4f35cb435cb8aa7419d64a03de2af504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '328dc29317c027d07032cd88cef1a314') in 0.018833 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.039490 seconds.
-  path: Assets/MyAssets/wallTextureSet/wallTextureSet02/01/walltextureset03_01_MetallicSmoothness.png
-  artifactKey: Guid(8145cee8f20d4d342adf764a7a0ecdd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/wallTextureSet/wallTextureSet02/01/walltextureset03_01_MetallicSmoothness.png using Guid(8145cee8f20d4d342adf764a7a0ecdd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd22edc78d7c84b4a79a24e0023882b3') in 0.019493 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/MyAssets/wallTextureSet/wallTextureSet03/01/walltextureset03_01_Normal.png
-  artifactKey: Guid(7aa7bbac2585aa941840a8efde46b44a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/wallTextureSet/wallTextureSet03/01/walltextureset03_01_Normal.png using Guid(7aa7bbac2585aa941840a8efde46b44a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96735926c997152c8e91f0a152b02e44') in 0.019915 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.280072 seconds.
-  path: Assets/MyAssets/wallTextureSet/wallTextureSet03/02/walltextureset03_01_Normal.png
-  artifactKey: Guid(8ddd94ec05ddaf243a6898003afc2692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/wallTextureSet/wallTextureSet03/02/walltextureset03_01_Normal.png using Guid(8ddd94ec05ddaf243a6898003afc2692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '270fc28154065478f473b34ba4f87b46') in 0.030114 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/MyAssets/wallTextureSet/wallTextureSet04/02/walltextureset03_02_Emission.png
-  artifactKey: Guid(4fc484031491a444e96e10704902722c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/wallTextureSet/wallTextureSet04/02/walltextureset03_02_Emission.png using Guid(4fc484031491a444e96e10704902722c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '513982de881af5e9769b23a8aa63a5b5') in 0.024852 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.047223 seconds.
-  path: Assets/MyAssets/wallTextureSet/wallTextureSet04/03/walltextureset03_02_MetallicSmoothness.png
-  artifactKey: Guid(ba11a646635b47147b7ece77f0137f23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MyAssets/wallTextureSet/wallTextureSet04/03/walltextureset03_02_MetallicSmoothness.png using Guid(ba11a646635b47147b7ece77f0137f23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9feb18444350d02a1877dd29d493855') in 0.013852 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Standard Assets/Environment/Water (Basic)/Textures/WaterBasicDaytimeGradient.psd
-  artifactKey: Guid(047330f39d11745ad0004adb8d76c639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Standard Assets/Environment/Water (Basic)/Textures/WaterBasicDaytimeGradient.psd using Guid(047330f39d11745ad0004adb8d76c639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fb1336c80e0045c07265b8424b34b7f') in 0.018661 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Standard Assets/Environment/Water (Basic)/Textures/WaterBasicNighttimeGradient.psd
-  artifactKey: Guid(8403d3349d112ba4d000be1be39e7c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Standard Assets/Environment/Water (Basic)/Textures/WaterBasicNighttimeGradient.psd using Guid(8403d3349d112ba4d000be1be39e7c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c95fca346ca7115d6cc32516ae776ca') in 0.015730 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.423153 seconds.
-  path: Assets/Standard Assets/Environment/Water/Water/Textures/WaterProNighttimeGradient.psd
-  artifactKey: Guid(b725b62cfc9d04e4886735ab2a8107d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Standard Assets/Environment/Water/Water/Textures/WaterProNighttimeGradient.psd using Guid(b725b62cfc9d04e4886735ab2a8107d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '038734b81c250ee4558b766601a18ec6') in 0.025237 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Diagonal.psd
-  artifactKey: Guid(ed5290d8df18488780e2996b9b882f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Diagonal.psd using Guid(ed5290d8df18488780e2996b9b882f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1293e097b289a3407499be06dbad76a') in 0.042876 seconds 
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004137 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Andrew\Documents\GitHub\CognitiveBiasGame\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image C:\Users\Andrew\Documents\GitHub\CognitiveBiasGame\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.25 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.098 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1099ms)
+		BeginReloadAssembly (135ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (870ms)
+			LoadAssemblies (89ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (249ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (426ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (293ms)
+				ProcessInitializeOnLoadMethodAttributes (37ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.25 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3733 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (480.9 KB). Loaded Objects now: 4309.
+Memory consumption went from 159.6 MB to 159.2 MB.
+Total: 5.496700 ms (FindLiveObjects: 0.362200 ms CreateObjectMapping: 0.104100 ms MarkObjects: 3.909600 ms  DeleteObjects: 1.118700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
