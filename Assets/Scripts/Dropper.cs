@@ -9,21 +9,9 @@ public class Dropper : MonoBehaviour
     public Material changeColour;
     public GameObject[] marks;
 
-    /*
-    private void Start()
-    {
-        doorTrig.SetActive(false);
-    }
-
-    // Start is called before the first frame update
-    private void Update()
-    {
-        if(count >= totalTally)
-        {
-            doorTrig.SetActive(true);
-        }
-    }
-    */
+    private string[] drops = new string[] { "Drop1", "Drop2", "Drop3", "Drop4", "Drop5" };
+    int index;
+    
 
     private void OnTriggerEnter(Collider other)
     {
@@ -32,8 +20,10 @@ public class Dropper : MonoBehaviour
         {
             ColourChange(marks[count]);
             count++;
-
-            Debug.Log(count);
+            index = Random.Range(0, drops.Length);
+            //Debug.Log(drops[index]);
+            FindObjectOfType<AudioManager>().Play(drops[index]);
+            //Debug.Log(count);
         }
     }
 
