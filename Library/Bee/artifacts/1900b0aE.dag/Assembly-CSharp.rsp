@@ -376,6 +376,7 @@
 "Assets/Scripts/MouseLook.cs"
 "Assets/Scripts/PickUp.cs"
 "Assets/Scripts/PlayerMovement.cs"
+"Assets/Scripts/SettingsMenu.cs"
 "Assets/Scripts/Sound.cs"
 "Assets/TeKniKo_Free/Power_Ups/Scripts/ObjectBounce.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
