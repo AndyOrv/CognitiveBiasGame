@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class FailTrig : MonoBehaviour
 {
-    public GameObject failTrigger;
-    public GameObject doorTrigger;
-    public GameObject[] PuzzleTriggers;
+    [SerializeField] GameObject doorTrigger;
+    [SerializeField] GameObject killTrigger;
+    [SerializeField] GameObject[] PuzzleTriggers;
 
-    public Vector3[] positions;
-    
+    [SerializeField] Vector3[] positions;
+
 
 
     private void Start()
     {
         doorTrigger.SetActive(false);
+        killTrigger.SetActive(false);
 
 
         positions = new Vector3[PuzzleTriggers.Length];
@@ -35,6 +36,10 @@ public class FailTrig : MonoBehaviour
         if (PuzzleCorrect())
         {
             doorTrigger.SetActive(true);
+        }
+        else
+        {
+            killTrigger.SetActive(true);
         }
     }
 
