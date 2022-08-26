@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
     private bool isJumping;
     private bool isDead = false;
 
-    public bool notPaused = false;
+    public bool Paused = false;
 
     void Start()
     {
@@ -58,16 +58,20 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (!isDead && !notPaused)
+        cursorLock();
+        
+        if (!isDead && !Paused)
         {
             UpdateMouseLook();
             UpdateMovement();
         }
-        Respawn();
-
+        
+        
+        if (isDead){Respawn();}
         if (Input.GetKeyDown(KeyCode.P)){patback();}
     }
 
+    #region cursor and mouse
     void UpdateMouseLook()
     {
         Vector2 targetMouseDelta = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
@@ -80,7 +84,24 @@ public class PlayerController : MonoBehaviour
         playerCamera.localEulerAngles = Vector3.right * cameraPitch;
         transform.Rotate(Vector3.up * currentMouseDelta.x * mouseSensitivity);
     }
+    void cursorLock()
+    {
+        if (!Paused)
+        {
+            
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
+        else
+        {
+            
+            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = true;
+        }
+    }
+    #endregion
 
+    #region movement
     void UpdateMovement()
     {
         Vector2 targetDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
@@ -112,7 +133,9 @@ public class PlayerController : MonoBehaviour
         else
             movementSpeed = Mathf.Lerp(movementSpeed, walkSpeed, Time.deltaTime * runBuildUpSpeed);
     }
+    #endregion
 
+    #region jump code
     private void JumpInput()
     {
         if (Input.GetKeyDown(jumpKey) && !isJumping)
@@ -151,7 +174,9 @@ public class PlayerController : MonoBehaviour
                 return true;
         return false;
     }
+    #endregion
 
+    #region killing player
     public void killPlayer()
     {
         isDead = true;
@@ -171,7 +196,9 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+    #endregion
 
+    #region patting back
     public bool CanPat = false;
     private bool patted = false;
     private void patback()
@@ -187,5 +214,8 @@ public class PlayerController : MonoBehaviour
             killPlayer();
         }
     }
+    #endregion
+
+
 
 }

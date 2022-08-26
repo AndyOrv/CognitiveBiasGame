@@ -19,8 +19,9 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public GameObject loadingScreen;
+    public Slider progressbar;
 
-    private SceneIndexes currentScene;
+    public SceneIndexes currentScene;
 
     public virtual void firstLoad() { SceneManager.LoadSceneAsync((int)SceneIndexes.TITLE_SCREEN, LoadSceneMode.Additive); }
     private void Awake()
@@ -51,12 +52,26 @@ public class GameManager : MonoBehaviour
         LoadGame(currentScene, currentScene);
     }
 
+    float totalSceneProgress;
     public IEnumerator GetSceneLoadProgress()
     {
         for(int i = 0; i < scenesLoading.Count; i++)
         {
             while (!scenesLoading[i].isDone)
             {
+                totalSceneProgress = 0;
+
+                foreach(AsyncOperation operation in scenesLoading)
+                {
+                    totalSceneProgress += operation.progress;
+                }
+
+                totalSceneProgress = totalSceneProgress / scenesLoading.Count;
+
+                Debug.Log(totalSceneProgress);
+                progressbar.value = (totalSceneProgress);
+
+
                 yield return null;
             }
         }
