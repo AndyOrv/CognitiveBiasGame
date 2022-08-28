@@ -2,14 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+-- Author: Andrew Orvis
+-- Description: Dropper class for puzzel on level two allows for objects to be placed within and tracked
+ */
+
+
 public class Dropper : MonoBehaviour
 {
     public int count = 0;
 
-    public Material changeColour;
-    public GameObject[] marks;
+    [SerializeField] Material changeColour;
+    [SerializeField] GameObject[] marks;
 
-    private string[] drops = new string[] { "Drop1", "Drop2", "Drop3", "Drop4", "Drop5" };
+    private string[] drops = new string[] { "Drop1", "Drop2", "Drop3", "Drop4", "Drop5","Drop6" }; //narrator voice lines to be played randomly when object is dropped
     int index;
     
 
@@ -20,10 +26,11 @@ public class Dropper : MonoBehaviour
         {
             ColourChange(marks[count]);
             count++;
+            //index to select voice at random
             index = Random.Range(0, drops.Length);
-            //Debug.Log(drops[index]);
+
             FindObjectOfType<AudioManager>().Play(drops[index]);
-            //Debug.Log(count);
+
         }
     }
 

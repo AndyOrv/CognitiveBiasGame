@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/*
+-- Author: Andrew Orvis
+-- Description: A player controller class allowing capabilies to move a player in first person jump and sprint
+ */
+
+
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] Transform playerCamera = null;
@@ -39,6 +45,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] GameObject deathScreen;
 
+    private AudioManager audioMan;
+
     private bool isJumping;
     private bool isDead = false;
 
@@ -46,6 +54,8 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        audioMan = FindObjectOfType<AudioManager>();
+
         controller = GetComponent<CharacterController>();
         if (lockCursor)
         {
@@ -60,7 +70,7 @@ public class PlayerController : MonoBehaviour
     {
         cursorLock();
         
-        if (!isDead && !Paused)
+        if (!isDead && !Paused) //if player isnt dead and game isnt paused allow for movement
         {
             UpdateMouseLook();
             UpdateMovement();
@@ -102,6 +112,7 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     #region movement
+    // apply forces in correct direction for player movement
     void UpdateMovement()
     {
         Vector2 targetDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
@@ -145,6 +156,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    //applies collision flags for plyaer to hit off roofs and works through animation curve
     private IEnumerator JumpEvent()
     {
         controller.slopeLimit = 90.0f;
@@ -162,6 +174,7 @@ public class PlayerController : MonoBehaviour
         isJumping = false;
     }
 
+    //Applies additonal force to player to allow for smooth decent on slopes as gravity alone wont over come movement speed and causes player to jitter
     private bool OnSlope()
     {
         if (isJumping)
@@ -180,7 +193,10 @@ public class PlayerController : MonoBehaviour
     public void killPlayer()
     {
         isDead = true;
+        audioMan.Play("Zap");
         deathScreen.SetActive(true);
+
+        //On death move camera to ground as if player has fallen over
         playerCamera.transform.localPosition = new Vector3(playerCamera.transform.localPosition.x, playerCamera.transform.localPosition.y -1.5f, playerCamera.transform.localPosition.z);
         playerCamera.transform.localRotation = Quaternion.Euler(playerCamera.rotation.x, playerCamera.rotation.y, 45);
     }
@@ -188,7 +204,7 @@ public class PlayerController : MonoBehaviour
     public void Respawn()
     {
         if (Input.GetMouseButtonDown(0)){
-            Debug.Log("reload scene");
+            
             if (isDead)
             {
                 deathScreen.SetActive(false);
@@ -199,18 +215,23 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     #region patting back
+
+    //Pat back system for level 3
+
     public bool CanPat = false;
     private bool patted = false;
     private void patback()
     {
         if (CanPat && !patted)
         {
-            Debug.Log("Back Patted");
+            audioMan.Play("Pat");
+            audioMan.Play("level3E");
             CanPat = false;
             patted = true;
         }
         else
         {
+            audioMan.Play("level3C");
             killPlayer();
         }
     }

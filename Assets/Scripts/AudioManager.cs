@@ -4,6 +4,11 @@ using UnityEngine;
 using UnityEngine.Audio;
 using System;
 
+/*
+-- Author: Andrew Orvis
+-- Description: Class to manage audio clips, using the sound class
+ */
+
 public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
@@ -26,6 +31,7 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
+        //background music
         Play("Level Theme");
     }
 

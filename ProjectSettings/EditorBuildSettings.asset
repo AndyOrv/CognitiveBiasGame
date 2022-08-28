@@ -23,4 +23,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level4.unity
     guid: 362988cc0f715c84ba9676a4b1207080
+  - enabled: 1
+    path: Assets/Scenes/Introduction.unity
+    guid: 0e9a09621b2fe25419a9a710ae92b50a
+  - enabled: 1
+    path: Assets/Scenes/CommentryLevels/Level 1 Com.unity
+    guid: 89d8c6650fdc3714cab6ef1c9312929f
+  - enabled: 1
+    path: Assets/Scenes/CommentryLevels/Level 2 Com.unity
+    guid: ce039f5bd00842c48a72dc4c2057b566
+  - enabled: 1
+    path: Assets/Scenes/CommentryLevels/Level 3 Com.unity
+    guid: 7bd20e38b2406154eb268e61cc812f17
+  - enabled: 1
+    path: Assets/Scenes/CommentryLevels/Level 4 Com.unity
+    guid: 90a1ede6dd9aece4ab7c4b76a518816d
   m_configObjects: {}

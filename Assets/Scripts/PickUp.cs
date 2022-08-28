@@ -2,10 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+-- Author: Andrew Orvis
+-- Description: Attachment to object giving the player the capability to pick them up and walk them around
+ */
+
 public class PickUp : MonoBehaviour
 {
-    public Transform theDest;
-    public float holdLimit = 0.3f;
+    [SerializeField] Transform theDest;
+    [SerializeField] float holdLimit = 0.3f;
 
     private void OnMouseDown()
     {
@@ -31,6 +36,7 @@ public class PickUp : MonoBehaviour
         Holdlimit();
     }
 
+    //if object gets seperated from player via hitting a wall etc., this method is a threshold before the the item is dropped
     void Holdlimit()
     {
         if (Mathf.Abs(this.transform.position.x - theDest.position.x) > holdLimit || Mathf.Abs(this.transform.position.y - theDest.position.y) > holdLimit)

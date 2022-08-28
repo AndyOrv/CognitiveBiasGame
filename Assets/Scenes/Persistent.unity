@@ -149,6 +149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1550449125}
   - component: {fileID: 1550449124}
+  - component: {fileID: 1550449126}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Game Manager
@@ -170,6 +171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadingScreen: {fileID: 816120387}
   progressbar: {fileID: 1176402750}
+  currentScene: 0
 --- !u!4 &1550449125
 Transform:
   m_ObjectHideFlags: 0
@@ -185,6 +187,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1550449126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550449123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8a646a592a63dc4f983de93d50d1bf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1703859385
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -294,3 +308,276 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7704155fa1b744b4db689aebc1b54231, type: 3}
+--- !u!1 &3016282533055770055
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3016282533055770057}
+  - component: {fileID: 3016282533055770056}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!114 &3016282533055770056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016282533055770055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fb72d5e807d36e42ab08aa1e1663942, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Correct
+    clip: {fileID: 8300000, guid: 187c12a80b6e67d4b84191b0fc855aec, type: 3}
+    volume: 0.657
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Level Theme
+    clip: {fileID: 8300000, guid: 98fa5e15da36b0446b244f56e4bd0014, type: 3}
+    volume: 0.015
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Drop1
+    clip: {fileID: 8300000, guid: eca25c184e94bfb4bb57feaf97f1dbe8, type: 3}
+    volume: 0.602
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Drop2
+    clip: {fileID: 8300000, guid: 5c1fd17818088f244841fc590e5e0c8d, type: 3}
+    volume: 0.602
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Drop3
+    clip: {fileID: 8300000, guid: e851e5fd68c5d964fa2c0054e7a81845, type: 3}
+    volume: 0.602
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Drop4
+    clip: {fileID: 8300000, guid: a7116b586eb2d9c40992886fee7d1e96, type: 3}
+    volume: 0.602
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Drop5
+    clip: {fileID: 8300000, guid: d50a553b260994a4085aa7cab41bd67c, type: 3}
+    volume: 0.602
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Drop6
+    clip: {fileID: 8300000, guid: 8b989ce5af299794ebffda44b9377970, type: 3}
+    volume: 0.602
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: level1A
+    clip: {fileID: 8300000, guid: f36dab0f99623f846bddc23b45c98745, type: 3}
+    volume: 0.709
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: level1B
+    clip: {fileID: 8300000, guid: d10910fca0a5cd94a8d86ad9c08f64fd, type: 3}
+    volume: 0.602
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: level1C
+    clip: {fileID: 8300000, guid: bd3c42e6f05a3544780ca1b9db400648, type: 3}
+    volume: 0.602
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: level1D
+    clip: {fileID: 8300000, guid: d0b85eb4db6b7f746aed680b2f546e86, type: 3}
+    volume: 0.602
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: level1E
+    clip: {fileID: 8300000, guid: 02cd15712b6754a48b02578038218e4e, type: 3}
+    volume: 0.602
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: level1F
+    clip: {fileID: 8300000, guid: ed53b179c72865048a2839bdf3c55df8, type: 3}
+    volume: 0.602
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: level2A
+    clip: {fileID: 8300000, guid: 35f8cd0083da92a409dc98a3835bc3ff, type: 3}
+    volume: 0.602
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: level2B
+    clip: {fileID: 8300000, guid: 9670df0b5ac19c04080ebada71874210, type: 3}
+    volume: 0.602
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: level2C
+    clip: {fileID: 8300000, guid: 6594cbefe132b3e46bd94f3c670fd235, type: 3}
+    volume: 0.602
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: level2D
+    clip: {fileID: 8300000, guid: 5c6f7732cd6b8ab4a88dca992ba480ab, type: 3}
+    volume: 0.602
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: level2E
+    clip: {fileID: 8300000, guid: b57779ffdcd606b4baeae0668430b9ea, type: 3}
+    volume: 0.602
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: level3A
+    clip: {fileID: 8300000, guid: 19c1348ceac417b41a016312a003ca4a, type: 3}
+    volume: 0.602
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: level3B
+    clip: {fileID: 8300000, guid: 14e78c897a047834fa97726843cde7ce, type: 3}
+    volume: 0.602
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: level3C
+    clip: {fileID: 8300000, guid: 95a4cb4de7a7af9479816e1bc43a33d1, type: 3}
+    volume: 0.602
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: level3D
+    clip: {fileID: 8300000, guid: fdcaaf9e36c81dc44beae6c10f48fe1d, type: 3}
+    volume: 0.602
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: level3E
+    clip: {fileID: 8300000, guid: c2f3fdac40832e0438c1b67d9f85cdf5, type: 3}
+    volume: 0.602
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: level4A
+    clip: {fileID: 8300000, guid: 89b54fb07092a36419f066ef3e1d683a, type: 3}
+    volume: 0.602
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: level4B
+    clip: {fileID: 8300000, guid: 4d8c9f2cf3d87f341b14f62e21c82903, type: 3}
+    volume: 0.602
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Door
+    clip: {fileID: 8300000, guid: 120e071f90011914e8a91c1af8becb18, type: 3}
+    volume: 0.497
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Zap
+    clip: {fileID: 8300000, guid: 0709602c94d8cc946b4b676206fcd16c, type: 3}
+    volume: 0.497
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Pat
+    clip: {fileID: 8300000, guid: 7ffaba8bb98f6a142b8733e005a15d0b, type: 3}
+    volume: 0.511
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Van
+    clip: {fileID: 8300000, guid: e5df8e35acfe88a469cf475ade8c60df, type: 3}
+    volume: 0.1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Com1
+    clip: {fileID: 8300000, guid: aeb04e71aa4c3c24399c9320073ac900, type: 3}
+    volume: 0.602
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Com2
+    clip: {fileID: 8300000, guid: f6d1cc04131ec674698e0e0ff14514e8, type: 3}
+    volume: 0.602
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Com3
+    clip: {fileID: 8300000, guid: 40c915db03f46c647b439014861a132b, type: 3}
+    volume: 0.602
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Com4
+    clip: {fileID: 8300000, guid: 4a559bb7d9491024da97f518e8de3e88, type: 3}
+    volume: 0.602
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Com5
+    clip: {fileID: 8300000, guid: 73899ef18990b5e4ca2dfc3ad951c1bb, type: 3}
+    volume: 0.602
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Com6
+    clip: {fileID: 8300000, guid: 62268d886cba0124da66d4fe2e70c99f, type: 3}
+    volume: 0.602
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Com7
+    clip: {fileID: 8300000, guid: 4ab52b4939fe589499752543546d70d4, type: 3}
+    volume: 0.602
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Com8
+    clip: {fileID: 8300000, guid: ece2a159c7dadb441a1d5176a6ff4fce, type: 3}
+    volume: 0.602
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+--- !u!4 &3016282533055770057
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016282533055770055}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 20.93927, y: 1.3412929, z: -82.34061}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+-- Author: Andrew Orvis
+-- Description: Class for rotating the cubes sidesways in level 3
+ */
+
 public class CubeShifter : MonoBehaviour
 {
 
@@ -14,13 +19,7 @@ public class CubeShifter : MonoBehaviour
     private bool startrotating;
     private bool rotating;
 
-    //public GameObject failTrigger;
-
-    private void Start()
-    {
-        //failTrigger.SetActive(false);
-    }
-
+    //rotate cube
     IEnumerator RotateMe(Vector3 byAngles, float inTime)
     {
         var fromAngle = transform.rotation;
@@ -37,6 +36,7 @@ public class CubeShifter : MonoBehaviour
         startrotating = false;
     }
 
+    //button to activate the spin uses mouse down
     private void OnMouseUpAsButton()
     {
         if (!rotating)
@@ -44,7 +44,6 @@ public class CubeShifter : MonoBehaviour
             startrotating = true;
         }
 
-        //failTrigger.SetActive(true);
     }
 
     private void Update()
@@ -59,11 +58,5 @@ public class CubeShifter : MonoBehaviour
             rotating = true;
             StartCoroutine(RotateMe(Vector3.right * 90, 0.8f));
         }
-
-        if (Input.GetKeyDown("e"))
-        {
-            Debug.Log(theCube.transform.rotation.eulerAngles);
-        }
-
     }
 }

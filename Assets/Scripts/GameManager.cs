@@ -12,14 +12,24 @@ public enum SceneIndexes
     LEVEL_2 = 3,
     LEVEL_3 = 4,
     LEVEL_4 = 5,
+    INTRODUCTION = 6,
+    LEVEL_1_C = 7,
+    LEVEL_2_C = 8,
+    LEVEL_3_C = 9,
+    LEVEL_4_C = 10
 }
+
+/*
+-- Author: Andrew Orvis
+-- Description: Main game mamager for keeping track of / chaning scenes when nessary as well as implementing a functional loading screen with progress bar
+ */
 
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager instance;
-    public GameObject loadingScreen;
-    public Slider progressbar;
+    [SerializeField] static GameManager instance;
+    [SerializeField] GameObject loadingScreen;
+    [SerializeField] Slider progressbar;
 
     public SceneIndexes currentScene;
 
@@ -29,8 +39,6 @@ public class GameManager : MonoBehaviour
         instance = this;
 
         firstLoad();
-
-        Debug.Log((SceneIndexes)2);
     }
     
 
@@ -52,6 +60,8 @@ public class GameManager : MonoBehaviour
         LoadGame(currentScene, currentScene);
     }
 
+    #region progress bar
+
     float totalSceneProgress;
     public IEnumerator GetSceneLoadProgress()
     {
@@ -66,9 +76,10 @@ public class GameManager : MonoBehaviour
                     totalSceneProgress += operation.progress;
                 }
 
+                //calculate scene progress
                 totalSceneProgress = totalSceneProgress / scenesLoading.Count;
 
-                Debug.Log(totalSceneProgress);
+                
                 progressbar.value = (totalSceneProgress);
 
 
@@ -78,4 +89,5 @@ public class GameManager : MonoBehaviour
 
         loadingScreen.gameObject.SetActive(false);
     }
+    #endregion
 }

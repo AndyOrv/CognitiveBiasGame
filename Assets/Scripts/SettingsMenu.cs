@@ -4,18 +4,22 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 
+/*
+-- Author: Andrew Orvis
+-- Description: Class for mamaging the settings menu present on the title screen allowing for players to change resolution master volume and fullscreen mode
+ */
+
 public class SettingsMenu : MonoBehaviour
 {
-    public AudioMixer audioMix;
+    [SerializeField] AudioMixer audioMix;
+    [SerializeField] TMPro.TMP_Dropdown resoDropDown;
 
     Resolution[] resolutions;
 
-    public TMPro.TMP_Dropdown resoDropDown;
-
     private void Start()
     {
+        //collect possible resolutions from players screen and set defualt
         resolutions = Screen.resolutions;
-
         resoDropDown.ClearOptions();
 
         List<string> options = new List<string>();

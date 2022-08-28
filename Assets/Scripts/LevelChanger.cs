@@ -2,12 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+-- Author: Andrew Orvis
+-- Description: Simple code to be attached to either buttons to tirgger points to speak to the game mamger and change scenes
+ */
+
+
+
 public class LevelChanger : MonoBehaviour
 {
-    public int from;
-    public int to;
-    //public bool isTrigger = false;
-
+    [SerializeField] int from;
+    [SerializeField] int to;
 
     public void LevelChange()
     {
@@ -18,6 +23,5 @@ public class LevelChanger : MonoBehaviour
     public void OnTriggerEnter(Collider other)
     {
         LevelChange();
-        Debug.Log("level change");
     }
 }

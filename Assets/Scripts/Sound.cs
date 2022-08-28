@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
+/*
+-- Author: Andrew Orvis
+-- Description: Sound varaible to be used for audio manager, allows for volume pitch and loop changes
+ */
+
+
 [System.Serializable]
 public class Sound
 {

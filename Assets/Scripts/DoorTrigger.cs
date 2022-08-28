@@ -2,22 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+-- Author: Andrew Orvis
+-- Description: Simple door mecanisn to move door towards a given postion
+ */
+
+
 public class DoorTrigger : MonoBehaviour
 {
-    public bool willClose = true;
-    // the door from this object
-    public GameObject Door;
-    // the door copied and rotated/moved to be the opened door
-    public GameObject DoorOpen;
+    [SerializeField] bool willClose = true;
+    [SerializeField] GameObject Door;
+    [SerializeField] GameObject DoorOpen;
+    [SerializeField] bool isOpened = false;
+    [SerializeField] float moveSpeed = 3;
+    [SerializeField] float rotationSpeed = 90;
+
     // this will be a copy of the original door so that we have some numbers to work with.
     private GameObject DoorClosed;
-    // this controls if the door is opened or closed.
-    public bool isOpened = false;
 
-    // this is the movement rate (if movemnt is applied to the door)
-    public float moveSpeed = 3;
-    // this is the rotation rate (if rotation is applied to the door)
-    public float rotationSpeed = 90;
+    private bool done = false;
 
     void Start()
     {
@@ -32,15 +35,21 @@ public class DoorTrigger : MonoBehaviour
     {
         // every frame, move the door towards the Open/Closed door
         var target = isOpened ? DoorOpen : DoorClosed;
-        // these actually do the moving/rotating
+
         Door.transform.position = Vector3.MoveTowards(Door.transform.position, target.transform.position, moveSpeed * Time.deltaTime);
         Door.transform.rotation = Quaternion.RotateTowards(Door.transform.rotation, target.transform.rotation, rotationSpeed * Time.deltaTime);
     }
 
     void OnTriggerEnter(Collider cube)
     {
-        // whenever anything enters the trigger, open the door
+
         isOpened = true;
+        if (!done)
+        {
+            FindObjectOfType<AudioManager>().Play("Door");
+            done = true;
+        }
+
     }
 
     void OnTriggerExit(Collider cube)

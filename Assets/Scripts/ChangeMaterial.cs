@@ -2,9 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+-- Author: Andrew Orvis
+-- Description: simple class to swap the material and object when needed, currently only needed for 1 change but can be easily modified to work with any numbers of materials
+ */
+
 public class ChangeMaterial : MonoBehaviour
 {
-    public Material[] material;
+    [SerializeField] Material[] material;
     Renderer rend;
 
 

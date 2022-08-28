@@ -2,6 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+-- Author: Andrew Orvis
+-- Description: This is for use on the puzzel in level 3 which has 3 spinnable cubes and 1 correct combination
+ */
+
+
 public class FailTrig : MonoBehaviour
 {
     [SerializeField] GameObject doorTrigger;
@@ -26,7 +32,6 @@ public class FailTrig : MonoBehaviour
             
 
             Vector3 postion = PuzzleTriggers[i].transform.position;
-            //Debug.Log(postion);
             positions[i] = postion;
         }
     }
@@ -47,20 +52,19 @@ public class FailTrig : MonoBehaviour
         for (int i = 0; i < PuzzleTriggers.Length; i++)
         {
 
-            //if (!positions[i].Equals(PuzzleTriggers[i].transform.position))
-            //if (!(positions[i].x == PuzzleTriggers[i].transform.position.x
-             //  && positions[i].z == PuzzleTriggers[i].transform.position.z))
+
              if(!(PosLeeWay(positions[i], PuzzleTriggers[i].transform.position)))
             {
                 return false; 
             }
         }
-        Debug.Log("CORRECT!");
+
         return true;
     }
 
-    
-    private bool PosLeeWay(Vector3 find, Vector3 within)//as cube doesnt spin perfect method impleneted to provide some leeway on trigger postion
+
+    //as cube doesnt spin perfect method impleneted to provide some leeway on trigger postion
+    private bool PosLeeWay(Vector3 find, Vector3 within)
     {
         float tempX;
         float tempZ;

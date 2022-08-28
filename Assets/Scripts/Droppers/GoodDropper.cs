@@ -2,13 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+-- Author: Andrew Orvis
+-- Description: Good version of the Dropper class, allowing for doors present to be opened when filled a ceratin amount
+ */
+
+
 public class GoodDropper : Dropper
 {
-    [SerializeField] int BadTally;
-    [SerializeField] int GoodTally;
+    [SerializeField] int BadTally; //tally for bad door
+    [SerializeField] int GoodTally; //tally for good door
 
-    public GameObject badDoorTrig;
-    public GameObject goodDoorTrig;
+    [SerializeField] GameObject badDoorTrig;
+    [SerializeField] GameObject goodDoorTrig;
 
     private void Start()
     {
@@ -16,7 +22,6 @@ public class GoodDropper : Dropper
         goodDoorTrig.SetActive(false);
     }
 
-    // Start is called before the first frame update
     private void Update()
     {
         if (count >= BadTally)
